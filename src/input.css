@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* @import url('./fonts/panchang.css'); */
+
+@font-face {
+    font-family: 'Panchang-Variable';
+    /* Notice we added /fonts/ to the path */
+    src: url('./fonts/Panchang-Variable.woff2') format('woff2'),
+        url('./fonts/Panchang-Variable.woff') format('woff'),
+        url('./fonts/Panchang-Variable.ttf') format('truetype');
+    font-weight: 200 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+@theme {
+  --font-panchang: "Panchang-Variable", sans-serif;
+  --font-hubot-sans: "Hubot Sans", sans-serif;
+
+  --color-black-bg:#1a1a1a;
+  --color-green-bg:#C7DD43;
+  --color-white-bg:#ffffff;
+  --color-light-green-bg:#E0E9CD;
+  --color-dark-green-bg:#516221;
+  --color-creamy:#F5F5F5;
+
+  --color-white-txt:#f0f0f0;
+  --color-black-txt:#191919;
+  --color-grey-txt:#A0A0A0;
+  --color-dark-grey:#414141;
+  --color-dark-grey-txt:#717171;
+  --color-grey-lines:#D0D0D0;
+  
+}
+
+
+@media (max-width: 1023px) {
+    
+    .UnixStudio-scrollbar::-webkit-scrollbar {
+        height: 8px;
+        display: block;
+    }
+    .UnixStudio-scrollbar::-webkit-scrollbar-track {
+        background:  var(--color-dark-grey);
+        border-radius: 50px;
+    }
+
+    .UnixStudio-scrollbar::-webkit-scrollbar-thumb {
+        background-color: black;
+        border-radius: 50px;
+        border: 2px solid transparent;
+        background-clip: content-box; 
+    }
+
+}
+
+
+.UnixStudio-scrollbar_2::-webkit-scrollbar {
+    height: 8px;
+    display: block;
+}
+.UnixStudio-scrollbar_2::-webkit-scrollbar-track {
+    background:  var(--color-dark-grey);
+    border-radius: 50px;
+    margin-inline: 2em; 
+}
+
+@media (min-width: 768px) {
+    .UnixStudio-scrollbar_2::-webkit-scrollbar-track {
+        margin-inline: 5em; 
+    }
+}
+
+.UnixStudio-scrollbar_2::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background-clip: content-box; 
+}
+
+
+
+
+
